@@ -15,47 +15,65 @@ This theme customises the 12 Step Meeting List plugin by allowing you to create:
 - Hybrid (in-person and online) meetings
 - In-Person Only meetings
 
-These meeting types are available when you create or edit a meeting in the WordPress admin area.
+These meeting types are available when you create or edit a meeting in the
+WordPress admin area.
 
 ## Visual Theme Changes
 
-With the changes to the plugin this theme also contains various CSS changes that affect the way meetings are displayed in the listing view as well as on the detail page.
+With the changes to the plugin this theme also contains various CSS changes that
+affect the way meetings are displayed in the listing view as well as on the
+detail page.
 
 ### Meeting Listing Page
 
-On the page where meetings are listed (i.e. `/meetings/`) the theme will now visually indicate a few new things.
+On the page where meetings are listed (i.e. `/meetings/`) the theme will now
+visually indicate a few new things.
 
 - Online and Hybrid meeting types are now visually indicated by displaying a:
     - Green visual indicator for `Online Only` meetings.
     - Orange visual indicator for `Hybrid` meetings.
-- For Online Only meetings the address will be removed completely from the listing so only Hybrid or In-Person meetings will show their address fields.
+- For Online Only meetings the address will be removed completely from the
+  listing so only Hybrid or In-Person meetings will show their address fields.
 
 ### Meeting Detail Page
 
 When viewing a meeting's detail (information) page the theme will now:
 
-- Show the type of meeting (either Online or Hybrid) next to the meeting list name.
-- Address details for a meeting are crossed out for Online Only meetings as a visual cue to people that the venue is not open.
-- Within the Meeting Information box the meeting type is also indicated with a tick next to it so it is clear to people what type of meeting they are viewing.
+- Show the type of meeting (either Online or Hybrid) next to the meeting list
+  name.
+- Address details for a meeting are crossed out for Online Only meetings as a
+  visual cue to people that the venue is not open.
+- Within the Meeting Information box the meeting type is also indicated with
+  a tick next to it to make it clear to people what type of meeting they are
+  viewing.
 
 ## Requirements
 
-Your WordPress website must be based on the `TwentySeventeen` theme for this theme to work. This is a child theme of `TwentySeventeen` so it won't work unless your website is based off this.
+Your WordPress website must be based on the `TwentySeventeen` theme for this
+theme to work. This is a child theme of `TwentySeventeen` so it won't work
+unless your website is based off this.
 
-If you do not use the `TwentySeventeen` theme for your site, you can manually pull the changes from this repository into your own theme. See the [Manual Implementation](#manual-implementation) section below.
+If you do not use the `TwentySeventeen` theme for your site, you can
+manually pull the changes from this repository into your own theme. See the
+[Manual Implementation](#manual-implementation) section below.
 
 ## Installing the Theme
 
-To install this theme download the latest [nawc.zip][dist] WordPress zip file
-(or by [clicking here][dist]) and go to your WordPress Themes page
-(i.e. `/wp-admin/themes.php`) and upload the zip file here. Once uploaded you
+To install this theme download the latest [nawc.zip][dist] WordPress zip
+file (or by [clicking here][dist]) and go to your WordPress Themes page (i.e.
+`/wp-admin/themes.php`) and upload the zip file here. Once uploaded you
 will need to activate the theme for the new theme to take effect.
 
 ## Managing Your Meetings
 
-With the theme installed (or the manual implementation below) you will now have three new options when creating or editing a meeting in your WordPress admin area. Go to your Meeting list plugin admin area at `/wp-admin/edit.php?post_type=tsml_meeting` and either click `Add New` or click on an existing meeting to change it's meeting type.
+With the theme installed (or the manual implementation below) you will now
+have three new options when creating or editing a meeting in your WordPress
+admin area. Go to your Meeting list plugin admin area at `/wp-admin/edit.php?
+post_type=tsml_meeting` and either click `Add New` or click on an existing
+meeting to change it's meeting type.
 
-Please read the following documentation for adding or editing a meeting based on the type of meeting you would like to display:
+Please read the following documentation for adding or editing a meeting
+based on the type of meeting you would like to display:
 
 1. [Online Only Meetings][online]
 2. [Hybrid Meetings][hybrid] (in-person and online)
@@ -63,11 +81,14 @@ Please read the following documentation for adding or editing a meeting based on
 
 ## Manual Implementation
 
-For non-twentyseventeen users this section is for you. To implelement these changes you need to copy the code from [functions.php][functions] as well as the CSS styles contained in [style.css][style].
+For non-twentyseventeen users this section is for you. To implement these
+changes you need to copy the code from [functions.php][functions] as well as
+the CSS styles contained in [style.css][style].
 
 ### functions.php
 
-Open up your theme's `functions.php` file and paste the following code anywhere within it:
+Open up your theme's `functions.php` file and paste the following code
+anywhere within it:
 
 ```php
 /**
@@ -83,11 +104,14 @@ if (function_exists('tsml_custom_types')) {
 
 ### style.css
 
-There is quite a bit of css you will need to copy and paste into your own theme and in order to get the right bit make sure you copy [these lines of code from the style.css][style-blob] (it should be lines `52` through to `147`).
+There is quite a bit of css you will need to copy and paste into your own
+theme and in order to get the right bit make sure you copy [these lines of
+code from the style.css][style-blob] (it should be lines `52` through to `147`).
 
 ## License
 
-This software is release under the `MIT License`. See the [LICENSE](LICENSE) file for more details.
+This software is release under the `MIT License`. See the [LICENSE](LICENSE)
+file for more details.
 
 ## Changelog
 
