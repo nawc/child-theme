@@ -120,7 +120,7 @@ For detailed changelogs please go to the [/docs/tags/](/docs/tags/) directory.
 [dist]: https://raw.githubusercontent.com/nawc/child-theme/main/dist/nawc.zip
 [functions]: /src/functions.php
 [style]: /src/style.css
-[style-blob]: https://github.com/nawc/child-theme/blob/a35c86e133b75cadc0fee940526a5981f34283b7/src/style.css#L52-L147
+[style-blob]: https://github.com/nawc/child-theme/blob/main/src/style.css#L52-L147
 [online]: /docs/ONLINE_ONLY_MEETINGS.md
 [hybrid]: /docs/HYBRID_MEETINGS.md
 [person]: /docs/IN-PERSON_ONLY_MEETINGS.md
