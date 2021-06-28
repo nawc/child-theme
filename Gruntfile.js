@@ -87,7 +87,7 @@ module.exports = function(grunt) {
                     description: 'Add files for tag <%= pkg.version %>.',
                 },
                 files: {
-                   src:  ['.', './docs/tags/<%= pkg.version %>.md']
+                   src:  ['.']
                 }
             }
         },
