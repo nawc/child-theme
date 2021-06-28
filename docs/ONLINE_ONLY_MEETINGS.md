@@ -4,7 +4,7 @@ This page shows you how to create, or edit, an Online Only Meeting using the chi
 
 ## Steps to Create/Edit Online Only Meeting
 
-Whether creating or editing an Online Only the meeting the steps are the same.
+Whether creating or editing an Online Only meeting the steps are the same.
 
 1. From the `Types` section within the `Meeting Information` tab you need to select the `Location Temporarily Closed` checkbox. Make sure nothing else is selected but this.
 2. Make sure that you've added in the Zoom (or Google Meet) link in the `URL` input box in the `Meeting Information` tab.
