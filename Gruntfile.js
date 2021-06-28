@@ -9,6 +9,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('git-changelog');
     grunt.loadNpmTasks('grunt-bump');
     grunt.loadNpmTasks('grunt-git');
+    grunt.loadNpmTasks('grunt-zip');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -108,12 +109,23 @@ module.exports = function(grunt) {
                 options: {
                     remote: 'origin',
                     branch: 'main',
-                    all: true,
                     tags: true
                 }
             }
+        },
+        zip: {
+            'using-cwd': {
+                cwd: 'src/',
+                src: [
+                    'src/archive-meetings.php',
+                    'src/functions.php',
+                    'src/style.css'
+                ],
+                dest: 'dist/nawc.zip'
+            }
         }
     });
-    grunt.registerTask('default', ['bump', 'git_changelog']);
+    grunt.registerTask('archive', ['zip']);
     grunt.registerTask('publish', ['gitcommit', 'gittag', 'gitpush']);
+    grunt.registerTask('default', ['bump', 'git_changelog', 'archive', 'publish']);
 };
