@@ -1,0 +1,19 @@
+{
+  "name": "nawc-child-theme",
+  "version": "2.7.0",
+  "author": {
+    "name": "Justin Hartman",
+    "email": "code@justinhartman.co"
+  },
+  "repository": {
+    "type": "vcs",
+    "url": "https://github.com/nawc/child-theme.git"
+  },
+  "private": false,
+  "license": "MIT",
+  "devDependencies": {
+    "git-changelog": "^2.0.0",
+    "grunt": "^1.4.1",
+    "grunt-bump": "^0.8.0"
+  }
+}

@@ -14,4 +14,8 @@ down to the `Assets` section. Within the Assets section you will see a file
 called `nawc.zip`. Download this file by clicking on it and then go to
 WordPress and install the theme as per normal.
 
+## Changelog
+
+For detailed changelogs please go to the [/docs/tags/](/docs/tags/) directory.
+
 [latest]: https://github.com/nawc/child-theme/releases/latest
