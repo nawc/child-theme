@@ -9,13 +9,13 @@ currently does not support.
 
 ## Installing the Theme
 
-To install this theme go to the [latest release][latest] and scroll
-down to the `Assets` section. Within the Assets section you will see a file
-called `nawc.zip`. Download this file by clicking on it and then go to
-WordPress and install the theme as per normal.
+To install this theme download the latest [nawc.zip][dist] WordPress zip file
+(or by [clicking here][dist]) and go to your WordPress Themes page
+(i.e. `/wp-admin/themes.php`) and upload the zip file here. Once uploaded you
+will need to activate the theme for the new theme to take effect.
 
 ## Changelog
 
 For detailed changelogs please go to the [/docs/tags/](/docs/tags/) directory.
 
-[latest]: https://github.com/nawc/child-theme/releases/latest
+[dist]: https://raw.githubusercontent.com/nawc/child-theme/main/dist/nawc.zip
