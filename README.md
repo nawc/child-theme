@@ -85,6 +85,10 @@ if (function_exists('tsml_custom_types')) {
 
 There is quite a bit of css you will need to copy and paste into your own theme and in order to get the right bit make sure you copy [these lines of code from the style.css][style-blob] (it should be lines `52` through to `147`).
 
+## License
+
+This software is release under the `MIT License`. See the [LICENSE](LICENSE) file for more details.
+
 ## Changelog
 
 For detailed changelogs please go to the [/docs/tags/](/docs/tags/) directory.
