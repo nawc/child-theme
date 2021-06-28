@@ -6,7 +6,7 @@ This page shows you how to create, or edit, a Hybrid Meeting using the child the
 
 Whether creating or editing a Hybrid the meeting the steps are the same.
 
-1. From the `Types` section within the `Meeting Information` tab you need to select the `Online & In-Person` checkbox.
+1. From the `Types` section within the `Meeting Information` tab you need to select the `Online & In-Person` checkbox. Make sure nothing else is selected but this.
 2. Make sure that you've added in the Zoom (or Google Meet) link in the `URL` input box in the `Meeting Information` tab.
 3. Ensure that the `Location Information` contains the meeting's address details.
 4. Click the `Publish` or `Update` button once these are complete.
