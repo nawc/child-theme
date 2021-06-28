@@ -1,0 +1,147 @@
+/*
+Theme Name:        NA Western Cape
+Description:       NAWC theme is a child theme of the Twenty Seventeen theme.
+Version:           2.7
+Requires at least: 4.7
+Requires PHP:      5.2.4
+Author:            Justin H.
+Author URI:        https://justinhartman.co/
+Template:          twentyseventeen
+*/
+
+/* Mobile menu width so items don't sit on top of each other. */
+@media only screen and (max-width:425px) {
+    .main-navigation li {
+        width: 100%;
+    }
+}
+
+/* Fix for the helpline number in the header. */
+.site-description a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Homepage content appears closer to menu. */
+.panel-content .wrap {
+    padding-top: 2em;
+}
+
+/* Remove massive top padding between navbar and heading. */
+.site-content {
+    padding: 2.5em 0 0;
+}
+
+/* Remove massive bottom padding from heading to content. */
+.entry-header {
+    margin-bottom: 0 !important;
+}
+
+/* Increase heading size so it's not the same size as body text. */
+.entry-title {
+    color: #333 !important;
+    font-size: 1.875rem !important;
+    letter-spacing: 0 !important;
+}
+
+/* Fixes the display on mobile for embedded Google Documents. */
+body.c1.c30{
+    padding:0;
+}
+
+/*
+ * Meeting List Plugin Changes.
+ *
+ * @author      Justin H. <wcascwebchair@na.org.za>
+ */
+
+/* Make meeting name span width of page */
+.page-header {
+    width: 100% !important;
+}
+
+/* Strike out meetings who's venue is closed and no online meeting. */
+.type-tc .location {
+    text-decoration-line: line-through;
+}
+
+/* Leave online meetings ones not striked through. */
+/* UPDATED: Now just hiding the text completely. */
+.type-onl.type-tc .location,
+.type-onl.type-tc .address,
+.type-onl.type-tc .region {
+    opacity: 0 !important;
+}
+
+/* Label font weight */
+.name small {
+    font-weight: 700;
+}
+
+/* Status text: Temp closed meetings */
+#tsml #meetings .results table tbody tr.notes.type-tc td.name small,
+.tsml-type-tc #tsml #meeting .page-header small {
+    visibility: hidden;
+}
+
+#tsml #meetings .results table tbody tr.notes.type-tc td.name small::before,
+.tsml-type-tc #tsml #meeting .page-header small:before {
+    content: " / Meeting Temporarily Closed";
+    visibility: visible;
+}
+
+/* Status text: Hybrid Meetings */
+#tsml #meetings .results table tbody tr.notes.type-hyb.type-onl td.name small,
+.tsml-meeting.tsml-type-hyb.tsml-type-onl #tsml #meeting .page-header small,
+tr.type-hyb.type-onl td.name a small::before {
+    color: orange;
+    visibility: hidden;
+}
+
+#tsml #meetings .results table tbody tr.notes.type-hyb.type-onl td.name small::before,
+.tsml-meeting.tsml-type-hyb.tsml-type-onl #tsml #meeting .page-header small::before,
+tr.type-hyb.type-onl td.name a small::before {
+    content: " / Online + In-Person" !important;
+    visibility: visible;
+}
+
+/* Hide the second <small> tag else we get duplicates. */
+#tsml #meetings .results table tbody tr.notes.type-hyb.type-onl td.name small:nth-child(2) {
+    display: none;
+}
+#tsml #meetings .results table tbody tr.type-hyb.type-onl td.name small {
+    visibility: hidden;
+}
+
+/* Status text: Online only meetings */
+#tsml #meetings .results table tbody tr.notes.type-onl.type-tc td.name small,
+.tsml-meeting.tsml-type-tc.tsml-type-onl #tsml #meeting .page-header small {
+    color: green;
+}
+
+#tsml #meetings .results table tbody tr.notes.type-onl.type-tc td.name small::before,
+.tsml-meeting.tsml-type-tc.tsml-type-onl #tsml #meeting .page-header small:before {
+    content: " / Online Only";
+}
+
+/* Hides all meetings that are temporarily closed. */
+tr[class="type-tc"],
+tr[class="notes type-tc"] {
+    display: none !important;
+}
+
+/*
+ * Meeting Page Detail View
+ */
+
+/* Ensure there is enough padding after Zoom button. */
+#tsml #location .panel ul.list-group .list-group-item,
+#tsml #meeting .panel ul.list-group .list-group-item {
+    padding: 10px 15px 15px !important;
+}
+
+#tsml #meetings .results table tbody tr.notes.type-hyb.type-onl td.name small,
+.tsml-meeting.tsml-type-hyb.tsml-type-onl #tsml #meeting .page-header h1 small {
+    color: orange;
+    visibility: hidden;
+}
