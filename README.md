@@ -68,9 +68,9 @@ will need to activate the theme for the new theme to take effect.
 
 With the theme installed (or the manual implementation below) you will now
 have three new options when creating or editing a meeting in your WordPress
-admin area. Go to your Meeting list plugin admin area at `/wp-admin/edit.php?
-post_type=tsml_meeting` and either click `Add New` or click on an existing
-meeting to change it's meeting type.
+admin area. Go to your Meeting list plugin admin area at
+`/wp-admin/edit.php?post_type=tsml_meeting` and either click `Add New` or
+click on an existing meeting to change it's meeting type.
 
 Please read the following documentation for adding or editing a meeting
 based on the type of meeting you would like to display:
@@ -120,7 +120,7 @@ For detailed changelogs please go to the [/docs/tags/](/docs/tags/) directory.
 [dist]: https://raw.githubusercontent.com/nawc/child-theme/main/dist/nawc.zip
 [functions]: /src/functions.php
 [style]: /src/style.css
-[style-blob]: https://github.com/nawc/child-theme/blob/66b126e155dcc1020d0c2aa8b8e0920579d1c6a7/src/style.css#L52-L147
+[style-blob]: https://github.com/nawc/child-theme/blob/a35c86e133b75cadc0fee940526a5981f34283b7/src/style.css#L52-L147
 [online]: /docs/ONLINE_ONLY_MEETINGS.md
 [hybrid]: /docs/HYBRID_MEETINGS.md
 [person]: /docs/IN-PERSON_ONLY_MEETINGS.md
