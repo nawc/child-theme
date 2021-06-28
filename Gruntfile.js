@@ -15,10 +15,10 @@ module.exports = function(grunt) {
             options: {
                 files: ['package.json'],
                 updateConfigs: ['pkg', 'git_changelog'],
-                commit: false,
+                commit: true,
                 commitMessage: 'chore: Tag Version %VERSION%',
                 commitFiles: ['-a'],
-                createTag: false,
+                createTag: true,
                 tagName: '%VERSION%',
                 tagMessage: 'chore(release): %VERSION%',
                 push: false,
