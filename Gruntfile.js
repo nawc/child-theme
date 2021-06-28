@@ -16,9 +16,6 @@ module.exports = function(grunt) {
             options: {
                 files: ['package.json'],
                 updateConfigs: ['pkg', 'git_changelog'],
-                commit: false,
-                createTag: false,
-                push: false,
                 globalReplace: true,
                 prereleaseName: false,
                 metadata: '',
@@ -87,7 +84,7 @@ module.exports = function(grunt) {
                     description: 'Add files for tag <%= pkg.version %>.',
                 },
                 files: {
-                   src:  ['.']
+                   src:  ['package.json', 'yarn.lock', 'style.css', 'docs/tags']
                 }
             }
         },
