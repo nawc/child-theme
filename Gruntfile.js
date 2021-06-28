@@ -80,14 +80,18 @@ module.exports = function(grunt) {
                 }
             }
         },
+        gitadd: {
+            task: {
+                files: {
+                    src: ['.']
+                }
+            }
+        },
         gitcommit: {
             your_target: {
                 options: {
                     message: 'chore: Tag Version <%= pkg.version %>',
                     description: 'Add files for tag <%= pkg.version %>.',
-                },
-                files: {
-                   src:  ['.']
                 }
             }
         },
