@@ -79,26 +79,26 @@ body.c1.c30{
 }
 
 /* Status text: Temp closed meetings */
-#tsml #meetings .results table tbody tr.notes.type-tc td.name small,
+#tsml #meetings .results table tbody .type-tc td.name small,
 .tsml-type-tc #tsml #meeting .page-header small {
     visibility: hidden;
 }
 
-#tsml #meetings .results table tbody tr.notes.type-tc td.name small::before,
+#tsml #meetings .results table tbody .type-tc td.name small::before,
 .tsml-type-tc #tsml #meeting .page-header small:before {
     content: " / Meeting Temporarily Closed";
     visibility: visible;
 }
 
 /* Status text: Hybrid Meetings */
-#tsml #meetings .results table tbody tr.notes.type-hyb.type-onl td.name small,
+#tsml #meetings .results table tbody .type-hyb.type-onl td.name small,
 .tsml-meeting.tsml-type-hyb.tsml-type-onl #tsml #meeting .page-header small,
 tr.type-hyb.type-onl td.name a small::before {
     color: orange;
     visibility: hidden;
 }
 
-#tsml #meetings .results table tbody tr.notes.type-hyb.type-onl td.name small::before,
+#tsml #meetings .results table tbody .type-hyb.type-onl td.name small::before,
 .tsml-meeting.tsml-type-hyb.tsml-type-onl #tsml #meeting .page-header small::before,
 tr.type-hyb.type-onl td.name a small::before {
     content: " / Online + In-Person" !important;
@@ -106,7 +106,7 @@ tr.type-hyb.type-onl td.name a small::before {
 }
 
 /* Hide the second <small> tag else we get duplicates. */
-#tsml #meetings .results table tbody tr.notes.type-hyb.type-onl td.name small:nth-child(2) {
+#tsml #meetings .results table tbody .type-hyb.type-onl td.name small:nth-child(2) {
     display: none;
 }
 #tsml #meetings .results table tbody tr.type-hyb.type-onl td.name small {
@@ -114,12 +114,12 @@ tr.type-hyb.type-onl td.name a small::before {
 }
 
 /* Status text: Online only meetings */
-#tsml #meetings .results table tbody tr.notes.type-onl.type-tc td.name small,
+#tsml #meetings .results table tbody .type-onl.type-tc td.name small,
 .tsml-meeting.tsml-type-tc.tsml-type-onl #tsml #meeting .page-header small {
     color: green;
 }
 
-#tsml #meetings .results table tbody tr.notes.type-onl.type-tc td.name small::before,
+#tsml #meetings .results table tbody .type-onl.type-tc td.name small::before,
 .tsml-meeting.tsml-type-tc.tsml-type-onl #tsml #meeting .page-header small:before {
     content: " / Online Only";
 }
@@ -140,7 +140,7 @@ tr[class="notes type-tc"] {
     padding: 10px 15px 15px !important;
 }
 
-#tsml #meetings .results table tbody tr.notes.type-hyb.type-onl td.name small,
+#tsml #meetings .results table tbody .type-hyb.type-onl td.name small,
 .tsml-meeting.tsml-type-hyb.tsml-type-onl #tsml #meeting .page-header h1 small {
     color: orange;
     visibility: hidden;
