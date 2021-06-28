@@ -12,10 +12,9 @@ Whether creating or editing an Online Only meeting the steps are the same.
    is selected but this.
 2. Make sure that you've added in the Zoom (or Google Meet) link in the
    `URL` input box in the `Meeting Information` tab.
-3. **Optional:** You don't need to add any meeting address information in
-   the `Location Information` tab but if you do, or there is already
-   location information in place, you can leave it as is because the plugin
-   will cross out these details in the respective views.
+3. You need to include basic meeting address information in
+   the `Location Information` tab as the plugin requires you to use this but
+   this theme will strike out the address details in the respective views.
 4. Click the `Publish` or `Update` button once these are complete.
 
 ### Visual Demo of the Steps above
