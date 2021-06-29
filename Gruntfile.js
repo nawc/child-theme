@@ -1,5 +1,5 @@
 /**
- * Gruntfile for changelog and version bumps.
+ * Gruntfile for changelog, version bumps and git workflow.
  *
  * @author     Justin Hartman <code@justinhartman.co>
  * @copyright  Copyright (c) 2021, Justin Hartman <https://justinhartman.co>
