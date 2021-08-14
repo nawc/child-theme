@@ -1,7 +1,7 @@
 /*
 Theme Name:        NA Western Cape
 Description:       NAWC theme is a child theme of the Twenty Seventeen theme.
-Version:           2.7.7
+Version:           2.7.8
 Requires at least: 4.7
 Requires PHP:      5.2.4
 Author:            Justin H.
@@ -126,7 +126,9 @@ tr.type-hyb.type-onl td.name a small::before {
 
 /* Hides all meetings that are temporarily closed. */
 tr[class="type-tc"],
-tr[class="notes type-tc"] {
+tr[class="notes type-tc"],
+tr[class="type-tc attendance-inactive"],
+tr[class="notes type-tc attendance-inactive"] {
     display: none !important;
 }
 
