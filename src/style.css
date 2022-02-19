@@ -132,6 +132,11 @@ tr[class="notes type-tc attendance-inactive"] {
     display: none !important;
 }
 
+/* 19-02-2022: New method to hide inactive meetings */
+tr.type-tc.attendance-inactive {
+    visibility: collapse !important;
+}
+
 /*
  * Meeting Page Detail View
  */
