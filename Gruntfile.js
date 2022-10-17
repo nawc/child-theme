@@ -70,6 +70,10 @@ module.exports = function(grunt) {
                             'grep': '^chore'
                         },
                         {
+                            'title': 'Yarn Updates',
+                            'grep': '^yarn'
+                        },
+                        {
                             'title': 'Branches Merged',
                             'grep': '^Merge branch'
                         },
