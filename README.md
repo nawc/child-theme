@@ -125,25 +125,19 @@ CHANGELOG files are contained in the `/docs/tags/` folder. The Gruntfile
 also has a command to create a zip file of the theme that can be uploaded to 
 the server.
 
-### Full Release
+### Release Commands
 
-Executing the command below will create a new version of the theme by:
+Executing one of the commands below will create a new version of the theme and:
 
-- Bumping the version number (minor release 0.0.1 -> 0.0.2) 
+- Bump the version number
 - Create a new CHANGELOG file in `/docs/tags/`
 - Create a new zip file of the theme in `/dist/`
-- Publish the new version to GitHub
+- Publish the version to GitHub
 
 ```console
-$ npx grunt
-```
-
-You can also specify a major, minor or patch release by using the `--type` flag:
-
-```console
-$ npx grunt --type patch # will upgrade from 0.0.1 -> 0.0.2
-$ npx grunt --type minor # will upgrade from 0.0.1 -> 0.1.0
-$ npx grunt --type major # will upgrade from 0.0.1 -> 1.0.0
+$ npx grunt patch # will upgrade from 0.0.1 -> 0.0.2
+$ npx grunt minor # will upgrade from 0.0.1 -> 0.1.0
+$ npx grunt major # will upgrade from 0.0.1 -> 1.0.0
 ```
 
 ## License

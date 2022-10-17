@@ -131,5 +131,8 @@ module.exports = function(grunt) {
     });
     grunt.registerTask('archive', ['zip']);
     grunt.registerTask('publish', ['gitadd', 'gitcommit', 'gittag', 'gitpush']);
-    grunt.registerTask('default', ['bump', 'git_changelog', 'archive', 'publish']);
+    grunt.registerTask('full', ['git_changelog', 'archive', 'publish']);
+    grunt.registerTask('patch', ['bump:patch', 'full']);
+    grunt.registerTask('minor', ['bump:minor', 'full']);
+    grunt.registerTask('major', ['bump:major', 'full']);
 };
