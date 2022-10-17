@@ -108,6 +108,44 @@ There is quite a bit of css you will need to copy and paste into your own
 theme and in order to get the right bit make sure you copy [these lines of
 code from the style.css][style-blob] (it should be lines `52` through to `147`).
 
+## Building the Theme
+
+If you want to build this theme you need to install the packages with:
+
+```console
+$ yarn install
+```
+
+## Releases
+
+All releases are deployed using `grunt` and the `Gruntfile.js` contains all the
+deployment configuration details. The Grunt file will update version numbers
+and create a detailed CHANGELOG of changes from the previous version. All 
+CHANGELOG files are contained in the `/docs/tags/` folder. The Gruntfile 
+also has a command to create a zip file of the theme that can be uploaded to 
+the server.
+
+### Full Release
+
+Executing the command below will create a new version of the theme by:
+
+- Bumping the version number (minor release 0.0.1 -> 0.0.2) 
+- Create a new CHANGELOG file in `/docs/tags/`
+- Create a new zip file of the theme in `/dist/`
+- Publish the new version to GitHub
+
+```console
+$ npx grunt
+```
+
+You can also specify a major, minor or patch release by using the `--type` flag:
+
+```console
+$ npx grunt --type patch # will upgrade from 0.0.1 -> 0.0.2
+$ npx grunt --type minor # will upgrade from 0.0.1 -> 0.1.0
+$ npx grunt --type major # will upgrade from 0.0.1 -> 1.0.0
+```
+
 ## License
 
 This software is release under the `MIT License`. See the [LICENSE](LICENSE)
